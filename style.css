@@ -7,8 +7,18 @@ body {
     font-size: 1.1em; /*12px*/
     padding: 40px;
 }
+
 .box {
     width: 20px;
     height: 20px;
     background-color: green;
+}
+
+
+.change {
+    background-color: #ffc800;
+}
+
+.changeBackground {
+    background-color: #1200ff;
 }

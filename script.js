@@ -9,16 +9,20 @@ butt.addEventListener('click',function (){
 
 let primary = document.querySelector(".primary")
 let danger = document.querySelector(".danger")
- let inf = document.querySelector(".counter")
+let inf = document.querySelector(".counter")
 
 
- primary.addEventListener('click',function (){
+primary.addEventListener('click',function (){
     if(senderCounter === null){
         senderCounter=0
     } else {
         senderCounter++;
     }
     inf.textContent = senderCounter;
+})
+
+danger.addEventListener('click',function (){
+
 })
 
 

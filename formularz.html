@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kolokwium 1</title>
+    <link rel="stylesheet" href="style.css"></head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+<body class="body">
+    <form class="row g-3">
+        <div class="form-group">
+            <label for="inputMail">E-mail</label>
+            <input type="email" class="form-control" id="inputMail" placeholder="Email">
+        </div>
+        <div class="form-group col-6">
+            <label for="inputTopic">Temat</label>
+            <input type="text" class="form-control" id="inputTopic" placeholder="Temat">
+        </div>
+        <div class="form-group col-6">
+            <label for="inputMessage">Wiadomość</label>
+            <input type="text" class="form-control" id="inputMessage" placeholder="Wiadomość">
+        </div>
+        <div class="form-group">
+            <center>
+                <button type="button" class="btn btn-primary col-4 btnSend">Send</button>
+                <button type="button" class="btn btn-danger col-4 btnClear">Clear</button>
+            </center>
+        </div>
+    </form>
+    <table style="width:100%">
+        <tr>
+            <th>Wiadomość</th>
+            <th>Mail</th>
+            <th>Temat</th>
+            <th>Wiadomość</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td class = "mail"></td>
+            <td class = "temat"></td>
+            <td class = "wiadomosc"></td>
+        </tr>
+
+    </table>
+    <div id="counter">0</div>
+<script src="formularz.js"></script>
+</body>
+</html>

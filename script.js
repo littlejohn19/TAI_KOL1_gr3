@@ -24,6 +24,9 @@ primary.addEventListener('click',function (){
     console.log(senderCounter)
 })
 
+
+
+
 danger.addEventListener('click',function (){
     email.textContent="";
     theme.textContent="";

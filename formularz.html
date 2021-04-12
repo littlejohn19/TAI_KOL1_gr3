@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"></head>
+</head>
+<body>
+<div class="nav"></div>
+    <div class="form" >
+        <div class="elem">
+            <label> Email: <br><input type="email" class="emailIn" id="email"></label>
+        </div>
+        <div class="elem">
+            <label> Topic: <br><input type="text" class="topicIn" id="text"></label>
+        </div>
+        <div class="elem">
+            <textarea id="texta" class="textIn"></textarea>
+        </div>
+        <div class="elem">
+            <button type="button" class="btn btn-primary">Wyślij</button>
+        </div>
+        <div class="elem">
+            <button type="button" class="btn btn-danger">Wyczyść</button>
+        </div>
+    </div>
+    <div class="result">
+        <table border="1" width="50%">
+            <thead>
+            <tr>
+                <th>Wiadomość</th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Email: </td>
+                <td class="em"></td>
+            </tr>
+            <tr>
+                <td>Temat: </td>
+                <td class="to"></td>
+            </tr>
+            <tr>
+                <td>Wiadomość: </td>
+                <td class="mes"></td>
+            </tr>
+            <tr>
+                <td>Została wysłana!</td>
+                <td></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <p class="counter"></p>
+    </div>
+    <script src="form.js"></script>
+    <script src="navbar.js"></script>
+</body>
+</html>

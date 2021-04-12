@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <meta charset="utf8">
+    <title>Kolokwium 1</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+
+<body>
+    <h1>Nawigacja</h1>
+    <div class = "nav-bar">
+                    
+    </div>
+    <form class="col-12 col-sm-4" style="margin: auto;">
+        <fieldset>
+            <div class = "form-group">
+                <label for="email" class = "form-label">E-mail:</label> </br>
+                <input type = "email" class = "col-12 email-input" id = "email"  name = "email" placeholder="Podaj email" required/>
+            </div>
+            </br>
+            <div class = "form-group">
+                <label for="thema" class = "form-label">Temat:</label> </br>
+                <input type = "text" class = "col-12 thema-input" id = "thema"  name = "thema" placeholder="Podaj temat" required/>
+            </div>
+            </br>
+            <label for = "textarea">Wiadomość:</label>
+            <div class = "form-floating">
+                <textarea class = "form-control mess-input" id = "textarea"></textarea>
+            </div>
+            </br>
+            <button type="button" class="btn btn-primary" onclick="sendMessage()">Wyślij</button>
+            <button type="reset" class="btn alert-danger" onclick="clearMessage()">Wyczyść</button>
+            
+        </fieldset>
+
+    </form>
+    <div class = "center">
+        <p><b>Licznik: <a id = "clicks">0</a></b></p>
+        </br>
+        </br>
+    </div>
+    <div class="col-12 col-sm-4" style="margin: auto;">
+        <table class = "table table-striped table-dark result-table">
+            <td><b>Email:</b></td>
+                <td class="email-field"></td>
+            </tr>
+            <tr>
+                <td><b>Temat:</b></td>
+                <td class = "thema-field"></td>
+            </tr>
+            <tr>
+                <td><b>Wiadomość:</b></td>
+                <td class = "mess-field"></b></td>
+            </tr>
+            <tr>
+                <td><b>Została wysłana!</b></td>
+                <td>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script src="navbar.js"></script>
+    <script src="formularz.js"></script>
+</body>
+
+
+</html>

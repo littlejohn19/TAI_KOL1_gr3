@@ -12,3 +12,25 @@ body {
     height: 20px;
     background-color: green;
 }
+.form{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.elem {
+    margin: 20px;
+}
+.result{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: none;
+}
+table, th, td {
+    border: 1px solid black;
+}
+.counter {
+    margin: 50px;
+    font-size: 40px;
+    font-weight: bold;
+}
